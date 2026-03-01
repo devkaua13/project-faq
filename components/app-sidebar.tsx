@@ -64,16 +64,6 @@ const data = {
             logo: Hash,
             plan: "FAQ",
         },
-        {
-            name: "Acme Corp.",
-            logo: AudioWaveform,
-            plan: "Startup",
-        },
-        {
-            name: "Evil Corp.",
-            logo: Command,
-            plan: "Free",
-        },
     ],
     navMain: [
         {
@@ -89,26 +79,26 @@ const data = {
             ],
         },
         {
-            title: "Models",
+            title: "Ofertas",
             url: "#",
             icon: Bot,
             items: [
                 {
-                    title: "Genesis",
+                    title: "Webnário",
                     url: "#",
                 },
                 {
-                    title: "Explorer",
+                    title: "Lançamento",
                     url: "#",
                 },
                 {
-                    title: "Quantum",
+                    title: "Semana do Consumidor",
                     url: "#",
                 },
             ],
         },
         {
-            title: "Documentation",
+            title: "Leads",
             url: "#",
             icon: BookOpen,
             items: [
@@ -116,57 +106,22 @@ const data = {
                     title: "Introduction",
                     url: "#",
                 },
-                {
-                    title: "Get Started",
-                    url: "#",
-                },
-                {
-                    title: "Tutorials",
-                    url: "#",
-                },
-                {
-                    title: "Changelog",
-                    url: "#",
-                },
-            ],
-        },
-        {
-            title: "Settings",
-            url: "#",
-            icon: Settings2,
-            items: [
-                {
-                    title: "General",
-                    url: "#",
-                },
-                {
-                    title: "Team",
-                    url: "#",
-                },
-                {
-                    title: "Billing",
-                    url: "#",
-                },
-                {
-                    title: "Limits",
-                    url: "#",
-                },
             ],
         },
     ],
     projects: [
         {
-            name: "Design Engineering",
+            name: "Em planejamento",
             url: "#",
             icon: Frame,
         },
         {
-            name: "Sales & Marketing",
+            name: "Em planejamento",
             url: "#",
             icon: SquareTerminal,
         },
         {
-            name: "Travel",
+            name: "Em planejamento",
             url: "#",
             icon: Map,
         },
