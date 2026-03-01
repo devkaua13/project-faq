@@ -9,18 +9,18 @@ import {
     ChevronRight,
     Command,
     Frame,
-    GalleryVerticalEnd,
     Map,
     PieChart,
     Settings2,
     SquareTerminal,
-    User,
     LogOut,
     Bell,
     Sparkles,
     BadgeCheck,
     ChevronsUpDown,
     Search,
+    Gift,
+    Hash,
 } from "lucide-react"
 
 import {
@@ -60,9 +60,9 @@ const data = {
     },
     teams: [
         {
-            name: "Acme Inc",
-            logo: GalleryVerticalEnd,
-            plan: "Enterprise",
+            name: "Hashtag Treinamentos",
+            logo: Hash,
+            plan: "FAQ",
         },
         {
             name: "Acme Corp.",
@@ -77,7 +77,7 @@ const data = {
     ],
     navMain: [
         {
-            title: "Ofertas",
+            title: "Produtos",
             url: "#",
             icon: PieChart,
             isActive: true,
@@ -85,14 +85,6 @@ const data = {
                 {
                     title: "Comunidade Impressionadora",
                     url: "/pages/impressive-community",
-                },
-                {
-                    title: "Starred",
-                    url: "#",
-                },
-                {
-                    title: "Settings",
-                    url: "#",
                 },
             ],
         },
