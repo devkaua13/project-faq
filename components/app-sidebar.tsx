@@ -194,10 +194,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     <SidebarGroupLabel>Platform</SidebarGroupLabel>
                     <SidebarMenu>
                         <SidebarMenuItem className="px-2 pb-2">
-                            <div className="relative">
-                                <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-                                <SidebarInput placeholder="Search..." className="pl-8" />
-                            </div>
                         </SidebarMenuItem>
                         {data.navMain.map((item) => (
                             <Collapsible
@@ -233,7 +229,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     </SidebarMenu>
                 </SidebarGroup>
                 <SidebarGroup className="group-data-[collapsible=icon]:hidden">
-                    <SidebarGroupLabel>Projects</SidebarGroupLabel>
+                    <SidebarGroupLabel>Plano</SidebarGroupLabel>
                     <SidebarMenu>
                         {data.projects.map((item) => (
                             <SidebarMenuItem key={item.name}>
