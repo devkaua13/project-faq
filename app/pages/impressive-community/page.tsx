@@ -11,9 +11,9 @@ export default function Page() {
         <>
             <AppSidebar />
             <SidebarInset>
-                <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+                <header className="flex h-16 shrink-0 items-center gap-2 px-4">
                     <SidebarTrigger className="-ml-1" />
-                    <div className="relative">
+                    <div className="relative ml-auto">
                                 <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
                                 <SidebarInput placeholder="Search..." className="pl-8" />
                             </div>
