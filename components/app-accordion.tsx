@@ -3,24 +3,33 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
-import { data } from "@/app/data/impressive-community-data"
+import { data } from "@/app/data/impressive-community-data";
 
-export function AppAccordion() {
+type AppAccordionProps = {
+  page?: number;
+  perPage?: number;
+};
+
+export function AppAccordion({ page = 1, perPage = 10 }: AppAccordionProps) {
+  const start = (page - 1) * perPage;
+  const end = start + perPage;
+  const pageItems = data.slice(start, end);
+
   return (
     <Accordion
       type="single"
       collapsible
-      defaultValue="item-1"
+      defaultValue={pageItems[0]?.value}
       className="w-full max-w-lg"
     >
-      {data.map((item) => (
+      {pageItems.map((item) => (
         <AccordionItem key={item.value} value={item.value}>
           <AccordionTrigger>{item.question}</AccordionTrigger>
           <AccordionContent>{item.answer}</AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
-  )
+  );
 }
